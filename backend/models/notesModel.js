@@ -7,7 +7,7 @@ const notesModel = mongoose.Schema({
         ref :"Group"
     }
 },{
-    timestamp : true
+    timestamps : true
 })
 
 const Notes = mongoose.model("Notes",notesModel);

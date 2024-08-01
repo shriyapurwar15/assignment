@@ -37,7 +37,7 @@ const getAllNotesByGroupId = async (req, res) => {
       return res.status(404).json({ message: "Group not found|| Not A valid Group Id" });
     }
     const notes = await Notes.find({groupId : groupId});
-    return res.status(200).json(notes);
+    return res.status(200).send({notes,group});
   } catch (error) {
     console.log(error);
     return res.status(500).send({status : 500, message : "Something went wrong [GET NOTEs BY GROUPID]"})
