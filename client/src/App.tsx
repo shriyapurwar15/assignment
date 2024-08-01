@@ -1,7 +1,7 @@
 import "./App.css";
 import GroupList from "./components/GroupList";
 import GroupCreateButton from "./components/GroupCreateButton";
-import { groupIdstore, useStore } from "./store/store";
+import { groupIdstore } from "./store/store";
 
 
 import "react-toastify/dist/ReactToastify.css";

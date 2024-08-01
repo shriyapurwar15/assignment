@@ -12,6 +12,6 @@ type groupIdState={
 
 export const groupIdstore = create<groupIdState>((set)=>({
   groupId :"",
-  setGroupId : (newGroupId : string)=>set((state)=> ({groupId : newGroupId}))
+  setGroupId : (newGroupId : string)=>set(()=> ({groupId : newGroupId}))
   // : (id:string) => set((state :any) => ({ groupId: id }))
 }))
